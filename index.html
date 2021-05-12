@@ -19,9 +19,9 @@
             <table width="1200" height="80" border="0">
                 <tbody><tr>
                     <td halign="center">
-                        <p class="paper_title">
+                        <p class="paper-title">
                             <img src="./img/344957.svg" alt="Logo" width="30">
-                            Inter-GPS: Interpretable Geometry Problem Solving with Formal Language and Symbolic Reasoning
+                            Inter-GPS: Interpretable Geometry Problem Solving <br> with Formal Language and Symbolic Reasoning
                         </p>
                         <hr>
                     </td>
@@ -39,7 +39,16 @@
         Abstract
     </heading>
     <p>
-        Geometry problem solving has attracted much attention in the NLP community recently. The task is challenging as it requires abstract problem understanding and symbolic reasoning with axiomatic knowledge. However, current datasets are either small in scale or not publicly available. Thus, we construct a new large-scale benchmark, Geometry3K, consisting of 3,002 geometry problems with dense annotation in formal language. We further propose a novel geometry solving approach with formal language and symbolic reasoning, called Interpretable Geometry Problem Solver (Inter-GPS). Inter-GPS first parses the problem text and diagram into formal language automatically via rule-based text parsing and neural object detecting, respectively. Unlike implicit learning in existing methods, Inter-GPS incorporates theorem knowledge as conditional rules and performs symbolic reasoning step by step. A theorem predictor is also designed to infer the theorem application sequence fed to the symbolic solver for the more efficient and reasonable searching path. Extensive experiments on the Geometry3K and GEOS datasets demonstrate Inter-GPS achieves significant improvements over existing methods.
+        Geometry problem solving has attracted much attention in the NLP community recently.
+        The task is challenging as it requires abstract problem understanding and symbolic reasoning with axiomatic knowledge.
+        However, current datasets are either small in scale or not publicly available.
+        Thus, we construct a new large-scale benchmark, <i>Geometry3K</i>, consisting of 3,002 geometry problems with dense annotation in <strong>formal language</strong>.
+        We further propose a novel geometry solving approach with formal language and <strong>symbolic reasoning</strong>,
+        called <strong>Interpretable Geometry Problem Solver (Inter-GPS)</strong>.
+        Inter-GPS first parses the problem text and diagram into formal language automatically via rule-based text parsing and neural object detecting, respectively.
+        Unlike implicit learning in existing methods, Inter-GPS incorporates <strong>theorem knowledge</strong> as conditional rules and performs symbolic reasoning step by step.
+        A theorem predictor is also designed to infer the theorem <strong>application sequence</strong> fed to the symbolic solver for the more efficient and reasonable searching path.
+        Extensive experiments on the <i>Geometry3K</i> and <i>GEOS</i> datasets demonstrate Inter-GPS achieves significant improvements over existing methods.
     </p>
 </div>
 
@@ -49,9 +58,9 @@
         Paper
     </heading>
     <p>
-        <papertitle>
+        <papername>
             Inter-GPS: <u>Inter</u>pretable <u>G</u>eometry <u>P</u>roblem <u>S</u>olving with Formal Language and Symbolic Reasoning
-        </papertitle><br>
+        </papername><br>
         Pan Lu, Ran Gong, Shibiao Jiang, Liang Qiu, Siyuan Huang, Xiaodan Liang, Song-Chun Zhu<br>
         The 59th Annual Meeting of the Association for Computational Linguistics (ACL), 2021<br>
         <a href="https://arxiv.org/abs/2105.04165">Paper</a> /
@@ -64,64 +73,6 @@
             <img src="./img/intergps_thumbnail.png" style="width: 100%;">
         </a>
     </p>
-</div>
-
-
-<div class="section" style="align-content: center">
-	<heading>
-        Team
-    </heading>
-	<div style="text-align: center; width: 100%; padding-top: 1em">
-		<div class="profile" style="">
-			<a href="https://lupantech.github.io/">
-                <img src="./img/panlu.jpg" alt="" style="border-radius: 50%; width:150px;">
-				<p>Pan Lu<sup>1</sup></p>
-			</a>
-        </div>
-        <div class="profile" style="">
-			<a href="https://nikepupu.github.io/">
-                <img src="./img/rangong.jpg" alt="" style="border-radius: 50%; width:150px;">
-			    <p>Steven Ran Gong<sup>1</sup></p>
-			</a>
-		</div>
-        <div class="profile" style="">
-			<a href="https://github.com/jiangshibiao">
-                <img src="./img/shibiao.png" alt="" style="border-radius: 50%; width:150px;">
-			    <p>Shibiao Jiang<sup>2</sup></p>
-			</a>
-        </div>
-		<div class="profile" style="">
-			<a href="https://www.lqiu.info/">
-                <img src="./img/liangqiu.jpg" alt="" style="border-radius: 50%; width:150px;">
-			    <p>Liang Qiu<sup>1</sup></p>
-			</a>
-		</div>
-        <div class="profile" style="">
-			<a href="https://siyuanhuang.com/">
-                <img src="./img/syhuang.jpg" alt="" style="border-radius: 50%; width:150px;">
-			    <p>Siyuan Huang<sup>1</sup></p>
-			</a>
-		</div>
-        <br>
-		<div class="profile" style="">
-			<a href="https://lemondan.github.io/">
-                <img src="./img/xiaodan.png" alt="" style="border-radius: 50%; width:150px;">
-			    <p>Xiaodan Liang<sup>3</sup></p>
-			</a>
-		</div>
-        <div class="profile" style="">
-			<a href="http://www.stat.ucla.edu/~sczhu/"><img src="./img/Zhu_UCLA.jpg" alt="" style="border-radius: 50%; width:150px;">
-			    <p>Song-Chun Zhu<sup>1</sup></p>
-			</a>
-		</div>
-	</div>
-	<div style="text-align:center; display: inline-block; width: 100%;">
-        <p>
-            <sup>1</sup>Center for Vision, Cognition, Learning, and Autonomy (VCLA), UCLA <br>
-            <sup>2</sup>College of Computer Science and Technology, Zhejiang University <br>
-            <sup>3</sup>School of Intelligent Systems Engineering, Sun Yat-sen University
-        </p>
-	</div>
 </div>
 
 
@@ -153,14 +104,84 @@
     </heading>
     <p class="bibtax">
         @inproceedings{lu2021inter,
-        <br> title={Inter-GPS: Interpretable Geometry Problem Solving with Formal Language and Symbolic Reasoning},
-        <br> author={Lu, Pan; Gong, Ran; Jiang, Shibiao; Qiu, Liang; Huang, Siyuan; Liang, Xiaodan; Zhu, Song-Chun},
-        <br> booktitle={The 59th Annual Meeting of the Association for Computational Linguistics (ACL)},
-        <br> year={2021}
+        <br>  title = {Inter-GPS: Interpretable Geometry Problem Solving with Formal Language and Symbolic Reasoning},
+        <br>  author = {Lu, Pan and Gong, Ran and Jiang, Shibiao and Qiu, Liang and Huang, Siyuan and Liang, Xiaodan and Zhu, Song-Chun},
+        <br>  booktitle = {The 59th Annual Meeting of the Association for Computational Linguistics (ACL)},
+        <br>  year = {2021}
         <br>}
     </p>
 </div>
 
+
+<div class="section" style="align-content: center">
+	<heading>
+        Authors
+    </heading>
+	<div style="text-align: center; width: 100%; padding-top: 1em;">
+		<div class="card" style="">
+			<a href="https://lupantech.github.io/">
+                <img class="card-img" src="./img/panlu.jpg" alt="" style="">
+				<p>Pan Lu<sup>1</sup></p>
+			</a>
+        </div>
+        <div class="card" style="">
+			<a href="https://nikepupu.github.io/">
+                <img class="card-img" src="./img/rangong.jpg" alt="" style="">
+			    <p>Steven Ran Gong<sup>1</sup></p>
+			</a>
+		</div>
+        <div class="card" style="">
+			<a href="https://github.com/jiangshibiao">
+                <img class="card-img" src="./img/shibiao.png" alt="" style="">
+			    <p>Shibiao Jiang<sup>2</sup></p>
+			</a>
+        </div>
+		<div class="card" style="">
+			<a href="https://www.lqiu.info/">
+                <img class="card-img" src="./img/liangqiu.jpg" alt="" style="">
+			    <p>Liang Qiu<sup>1</sup></p>
+			</a>
+		</div>
+        <div class="card" style="">
+			<a href="https://siyuanhuang.com/">
+                <img class="card-img" src="./img/syhuang.jpg" alt="" style="">
+			    <p>Siyuan Huang<sup>1</sup></p>
+			</a>
+		</div>
+        <br>
+		<div class="card" style="">
+			<a href="https://lemondan.github.io/">
+                <img class="card-img" src="./img/xiaodan.png" alt="" style="">
+			    <p>Xiaodan Liang<sup>3</sup></p>
+			</a>
+		</div>
+        <div class="card" style="">
+			<a href="http://www.stat.ucla.edu/~sczhu/">
+                <img class="card-img" src="./img/Zhu_UCLA.jpg" alt="" style="">
+			    <p>Song-Chun Zhu<sup>1</sup></p>
+			</a>
+		</div>
+	</div>
+	<div style="text-align:center; display: inline-block; width: 100%; margin-top: -2em">
+        <p>
+            <sup>1</sup>Center for Vision, Cognition, Learning, and Autonomy (VCLA), UCLA <br>
+            <sup>2</sup>College of Computer Science and Technology, Zhejiang University <br>
+            <sup>3</sup>School of Intelligent Systems Engineering, Sun Yat-sen University
+        </p>
+	</div>
+</div>
+
+
+<div class="section" style="">
+    <heading>
+        Contact
+    </heading>
+    <p>
+        Questions about geometry problem solving, or want to get in touch? Contact Pan Lu at
+        <a href="https://lupantech.github.io/">my contact page</a>, or open up a pull request or issue on
+        <a href="https://github.com/lupantech/InterGPS">Github</a>.
+    </p>
+</div>
 
 <div class="section" style="">
     <center>
@@ -187,7 +208,7 @@
             </a>
             </td>
         </tr></tbody>
-    </table><br><br>
+    </table><br>
     </center>
 </div>
 

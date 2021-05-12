@@ -1,6 +1,6 @@
 /* element: links */
 a {
-    color: #005587;
+    color: #007bff;
     text-decoration: none;
 }
 
@@ -46,31 +46,23 @@ strong {
 heading {
     font-family: Arial;
     color: #A31F34;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
 }
 
 /* block: paper title in the body text */
-papertitle {
+papername {
     font-family: Arial;
     font-size: 18px;
     font-weight: 600;
 }
 
-/* class: Bibtex */
-.bibtax {
-    padding-left: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+
 
 /* class: page title */
-.paper_title {
+.paper-title {
     font-family: Arial;
-    font-size: 24px;
+    font-size: 40px;
     text-align: center;
     font-weight:800;
 }
@@ -86,7 +78,24 @@ papertitle {
 }
 
 /* class: profile */
-.profile {
+.card {
     display: inline-block;
     width: 180px;
 }
+
+/* class: profile image */
+.card-img {
+    border-radius: 50%;
+    width:150px;
+}
+
+/* class: Bibtex */
+.bibtax {
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
