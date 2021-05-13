@@ -1,4 +1,7 @@
-/* element: links */
+body {
+  padding-top: 3.5rem;
+}
+
 a {
     color: #007bff;
     text-decoration: none;
@@ -77,13 +80,13 @@ papername {
 }
 
 /* class: profile */
-.card {
+.profile {
     display: inline-block;
     width: 180px;
 }
 
 /* class: profile image */
-.card-img {
+.profile-img {
     border-radius: 50%;
     width:150px;
 }
@@ -125,6 +128,50 @@ papername {
   color: white;
 }
 
+/* page banner */
+.navbar {
+    margin-top: -60px;
+    height: 50px;
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+.nav-item{
+  opacity: 0.9;
+  font-size: 18px
+}
+
+/* page banner */
+.page-header {
+  color: #fff;
+  text-align: center;
+  background-color: #159957;
+  /*background-image: linear-gradient(120deg, #4b2e83, #b7a57a);*/
+  background-image: linear-gradient(120deg, #155799, #159957);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: -10px;
+  /*text-shadow: 1px 1px 0 black;*/
+}
+
+.project-name {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 50px
+}
+
+.project-tagline {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  opacity: 0.9;
+  font-size: 28px
+}
+
 /* class: images in the table */
 .example-text {
     font-size: 14px;
@@ -161,28 +208,3 @@ papername {
     vertical-align: center;
 }
 
-
-.page-header {
-  color: #fff;
-  text-align: center;
-  background-color: #159957;
-  /*background-image: linear-gradient(120deg, #4b2e83, #b7a57a);*/
-  background-image: linear-gradient(120deg, #155799, #159957);
-  padding: 30px 30px;
-  margin: -10px -10px;
-  /*text-shadow: 1px 1px 0 black;*/
-  margin-bottom: 10px;
-}
-
-.project-name {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 50px
-}
-
-.project-tagline {
-  margin-bottom: 30px;
-  font-weight: normal;
-  opacity: 0.9;
-  font-size: 30px
-}
