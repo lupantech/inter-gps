@@ -127,11 +127,11 @@ papername {
 /* class: images in the table */
 .example-text {
     font-size: 14px;
-    vertical-align: top;
+    vertical-align: center;
 }
 
 .example-img-block {
-    vertical-align: top;
+    vertical-align: center;
     text-align: center;
 }
 
@@ -143,20 +143,20 @@ papername {
 .example-choice {
     font-size: 14px;
     white-space: nowrap;
-    vertical-align: top;
+    vertical-align: center;
 }
 
 .example-text-liter {
     font-family: Courier;
     font-size: 14px;
     letter-spacing: -0.2px;
-    vertical-align: top;
+    vertical-align: center;
 }
 
 .example-diag-liter {
     font-family: Courier;
     font-size: 14px;
     letter-spacing: -0.2px;
-    vertical-align: top;
+    vertical-align: center;
 }
 
