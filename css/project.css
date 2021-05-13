@@ -57,8 +57,6 @@ papername {
     font-weight: 600;
 }
 
-
-
 /* class: page title */
 .paper-title {
     font-family: Arial;
@@ -97,5 +95,68 @@ papername {
     background-color: #f5f5f5;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+/* Table for examples */
+#example {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#example td, #example th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#example tr:nth-child(even){background-color: #f5f5f5;}
+
+#example tr:hover {background-color: #ddd;}
+
+/*table tile*/
+#example th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  background-color: #2774AE;
+  color: white;
+}
+
+/* class: images in the table */
+.example-text {
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.example-img-block {
+    vertical-align: top;
+    text-align: center;
+}
+
+.example-img {
+    max-width: 150px;
+    max-height: 100px;
+}
+
+.example-choice {
+    font-size: 14px;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.example-text-liter {
+    font-family: Courier;
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    vertical-align: top;
+}
+
+.example-diag-liter {
+    font-family: Courier;
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    vertical-align: top;
 }
 

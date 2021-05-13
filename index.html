@@ -2,7 +2,6 @@
 <html>
     <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Inter-GPS</title>
-
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +10,6 @@
     </head>
 
 <body data-new-gr-c-s-check-loaded="14.1010.0" data-gr-ext-installed="">
-
 
 <div id="Banner">
     <div height="80" id="header" style="background-color:#FFFFFF; color: #FFFFFF">
@@ -30,7 +28,6 @@
         </center>
     </div>
 </div>
-
 
 <div class="section" style="">
     <img src="./img/model.png" style="width: 100%;">
@@ -51,7 +48,6 @@
         Extensive experiments on the <i>Geometry3K</i> and <i>GEOS</i> datasets demonstrate Inter-GPS achieves significant improvements over existing methods.
     </p>
 </div>
-
 
 <div class="section" style="">
     <heading>
@@ -75,18 +71,145 @@
     </p>
 </div>
 
-
 <div class="section" style="">
     <heading id="dataset">
         Dataset
     </heading>
+<!--    <p>-->
+<!--        <img src="./img/examples.png" style="width: 100%;">-->
+<!--    </p>-->
     <p>
-        <img src="./img/examples.png" style="width: 100%;">
+        Four data examples in the <i>Geometry3K</i> dataset are shown below:
+    </p>
+    <table id="example" style="margin-top:1em">
+      <tr>
+        <th>Problem Text</th>
+        <th>Diagram</th>
+        <th>Choices</th>
+        <th>Text Literals</th>
+        <th>Diagram Literals</th>
+      </tr>
+      <tr>
+        <td class="example-text">
+            In triangle ABC, AD = 3 and BD= 14. Find CD.
+        </td>
+        <td class="example-img-block">
+            <img class="example-img" src="./img/p1_mask.png" style="">
+        </td>
+        <td class="example-choice">
+            A. 6.0 <br>
+            B. 6.5 <br>
+            C. 7.0 <br>
+            D. 8.5 <br>
+            Answer: B
+        </td>
+        <td class="example-text-liter">
+            Triangle(A,B,C) <br>
+            Equals(LengthOf(Line(A,D)),3) <br>
+            Equals(LengthOf(Line(B,D)),14) <br>
+            Find(LengthOf(Line(C,D))
+        </td>
+        <td class="example-diag-liter">
+            Triangle(A,B,C) <br>
+            Triangle(A,C,D) <br>
+            Triangle(B,C,D) <br>
+            PointLiesOnLine(D,Line(A,B)) <br>
+            Perpendicular(Line(A,C),Line(B,C)) <br>
+            Perpendicular(Line(C,D),Line(A,B)
+        </td>
+      </tr>
+      <tr>
+        <td class="example-text">
+            Find y. Round to the nearest tenth.
+        </td>
+        <td class="example-img-block">
+            <img class="example-img" src="./img/p2_mask.png" style="">
+        </td>
+        <td class="example-choice">
+            A. 18.8 <br>
+            B. 23.2 <br>
+            C. 25.9 <br>
+            D. 44.0 <br>
+            Answer: C
+        </td>
+        <td class="example-text-liter">
+            Find(y)
+        </td>
+        <td class="example-diag-liter">
+            Equals(LengthOf(Line(A,B)),32) <br>
+            Equals(LengthOf(Line(B,D)),y) <br>
+            Equals(MeasureOf(Angle(A,C,B)),54) <br>
+            Equals(LengthOf(Line(A,D)),x) <br>
+            PointLiesOnLine(D,Line(A,C)) <br>
+            Perpendicular(Line(B,D),Line(C,D)) <br>
+            Equals(LengthOf(Line(A,B)),LengthOf(Line(B,C))) <br>
+        </td>
+      </tr>
+      <tr>
+        <td class="example-text">
+            Find the perimeter of $\parallelogram$ JKLM.
+        </td>
+        <td class="example-img-block">
+            <img class="example-img" src="./img/p3_mask.png" style="">
+        </td>
+        <td class="example-choice">
+            A. 11.2 <br>
+            B. 22.4 <br>
+            C. 24 <br>
+            D. 44.8 <br>
+            Answer: B
+        </td>
+        <td class="example-text-liter">
+            Find(PerimeterOf(Parallelogram(J,<br>K,L,M)))
+        </td>
+        <td class="example-diag-liter">
+            Equals(LengthOf(Line(L,K)),7.2) <br>
+            Equals(LengthOf(Line(M,L)),4) <br>
+            Equals(LengthOf(Line(E,J)),6) <br>
+            PointLiesOnLine(E,Line(M,L)) <br>
+            Perpendicular(Line(J,E),Line(E,L))
+        </td>
+      </tr>
+      <tr>
+        <td class="example-text">
+            In $\odot$ K, MN = 16 and m $\widehat$ MN = 98. Find the measure of LN. Round to the nearest hundredth.
+        </td>
+        <td class="example-img-block">
+            <img class="example-img" src="./img/p4_mask.png" style="">
+        </td>
+        <td class="example-choice">
+            A. 6.93 <br>
+            B. 7.50 <br>
+            C. 8.94 <br>
+            D. 10.00 <br>
+            Answer: C
+
+        </td>
+        <td class="example-text-liter">
+            Circle(K) <br>
+            Equals(LengthOf(Line(M,N)),16) <br>
+            Equals(MeasureOf(Arc(M,N)),98) <br>
+            Find(LengthOf(Line(L,N)))
+        </td>
+        <td class="example-diag-liter">
+            Equals(LengthOf(Line(J,K)),10) <br>
+            Perpendicular(Line(P,K),Line(M,P)) <br>
+            PointLiesOnLine(P,Line(M,N)) <br>
+            PointLiesOnLine(P,Line(L,J)) <br>
+            PointLiesOnLine(P,Line(L,K)) <br>
+            PointLiesOnLine(K,Line(P,J)) <br>
+            PointLiesOnLine(K,Line(L,J)) <br>
+            PointLiesOnCircle(M,Circle(K)) <br>
+            PointLiesOnCircle(J,Circle(K)) <br>
+            PointLiesOnCircle(N,Circle(K)) <br>
+            PointLiesOnCircle(L,Circle(K))
+        </td>
+      </tr>
+    </table>
     <p>
-        Coming soon.
+        The complete dataset will be released soon.
     </p>
 </div>
-
 
 <div class="section" style="">
     <heading>
@@ -96,7 +219,6 @@
         View on <a href="https://github.com/lupantech/InterGPS">GitHub</a>.
     </p>
 </div>
-
 
 <div class="section" style="">
     <heading>
@@ -111,7 +233,6 @@
         <br>}
     </p>
 </div>
-
 
 <div class="section" style="align-content: center">
 	<heading>
@@ -171,7 +292,6 @@
 	</div>
 </div>
 
-
 <div class="section" style="">
     <heading>
         Contact
@@ -211,7 +331,6 @@
     </table><br>
     </center>
 </div>
-
 
 </body>
 </html>
