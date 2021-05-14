@@ -227,7 +227,7 @@ papername {
 
 
 /*td {*/
-/*    !*width: 100%;*!*/
+/*    width: 100%;*/
 /*    word-break: keep-all; !* 不换行 *!*/
 /*    !*white-space: nowrap; !* 不换行 *!*!*/
 /*    overflow: auto; !* 内容超出宽度时隐藏超出部分的内容 *!*/
