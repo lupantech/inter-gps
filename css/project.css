@@ -61,21 +61,6 @@ papername {
     font-weight: 600;
 }
 
-.navbar, .page-header {
-    max-width: 700em;
-}
-
-.section {
-    width: 100%;
-    max-width: 70em;
-}
-
-.example {
-    width: 80%;
-    max-width: 5em;
-
-}
-
 /* page banner */
 .navbar {
     margin-top: -60px;
@@ -187,37 +172,66 @@ papername {
 
 /* class: images in the table */
 .example-text {
-    font-size: 14px;
     vertical-align: center;
+    display: table-cell; *display: inline-block;
 }
 
 .example-img-block {
     vertical-align: center;
     text-align: center;
+    display: table-cell; *display: inline-block;
 }
 
 .example-img {
     max-width: 150px;
     max-height: 100px;
+    display: table-cell; *display: inline-block;
 }
 
 .example-choice {
-    font-size: 14px;
     white-space: nowrap;
     vertical-align: center;
+    display: table-cell; *display: inline-block;
 }
 
 .example-text-liter {
     font-family: Courier;
-    font-size: 14px;
     letter-spacing: -0.2px;
     vertical-align: center;
+    /*display: table-cell;*/
+    /**display: inline-block;*/
 }
 
 .example-diag-liter {
     font-family: Courier;
-    font-size: 14px;
     letter-spacing: -0.2px;
     vertical-align: center;
+    /*display: table-cell;*/
+    /**display: inline-block;*/
+}
+
+/*Sizes*/
+.navbar, .page-header {
+    max-width: 700em;
+}
+
+.section {
+    width: 100%;
+    max-width: 70em;
+}
+
+
+/* 表格中内容超出不强制换行和超出宽度自动隐藏并显示省略号 */
+table{
+    table-layout:fixed;/* 只有定义了表格的布局算法为fixed，下面td的定义才能起作用。 */
+}
+
+
+td {
+    /*width: 100%;*/
+    word-break: keep-all; /* 不换行 */
+    /*white-space: nowrap; !* 不换行 *!*/
+    overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow: ellipsis; /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
 }
 
