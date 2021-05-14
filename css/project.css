@@ -173,30 +173,30 @@ papername {
 /* class: images in the table */
 .example-text {
     vertical-align: center;
-    display: table-cell; *display: inline-block;
+    display: table-cell;
+    *display: inline-block;
 }
 
 .example-img-block {
     vertical-align: center;
     text-align: center;
-    display: table-cell; *display: inline-block;
 }
 
 .example-img {
     max-width: 150px;
     max-height: 100px;
-    display: table-cell; *display: inline-block;
 }
 
 .example-choice {
     white-space: nowrap;
     vertical-align: center;
-    display: table-cell; *display: inline-block;
+    /*display: table-cell;*/
+    /**display: inline-block;*/
 }
 
 .example-text-liter {
     font-family: Courier;
-    letter-spacing: -0.2px;
+    letter-spacing: -.3px;
     vertical-align: center;
     /*display: table-cell;*/
     /**display: inline-block;*/
@@ -204,10 +204,14 @@ papername {
 
 .example-diag-liter {
     font-family: Courier;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.3px;
     vertical-align: center;
     /*display: table-cell;*/
     /**display: inline-block;*/
+}
+
+.example-text, .example-choice, .example-text-liter, .example-diag-liter {
+    font-size: 14px;
 }
 
 /*Sizes*/
