@@ -3,7 +3,8 @@ a {
     text-decoration: none;
 }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
     color: #005587;
     text-decoration: underline;
 }
@@ -18,7 +19,7 @@ a.hover:hover {
 
 /* element: paragraphs in the body text */
 p {
-    line-height:150%;
+    line-height: 150%;
     font-size: 18px;
 }
 
@@ -29,14 +30,16 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-body,td,th {
+body,
+td,
+th {
     font-family: Arial;
     font-size: 16px;
     font-weight: 400;
 }
 
 body {
-  padding-top: 3.5rem;
+    padding-top: 3.5rem;
 }
 
 strong {
@@ -73,36 +76,36 @@ papername {
     font-size: 22px;
 }
 
-.nav-item{
-  opacity: 0.9;
-  font-size: 18px
+.nav-item {
+    opacity: 0.9;
+    font-size: 18px
 }
 
 /* page banner */
 .page-header {
-  color: #fff;
-  text-align: center;
-  background-color: #159957;
-  /*background-image: linear-gradient(120deg, #4b2e83, #b7a57a);*/
-  background-image: linear-gradient(120deg, #155799, #159957);
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin-top: -10px;
-  /*text-shadow: 1px 1px 0 black;*/
+    color: #fff;
+    text-align: center;
+    background-color: #159957;
+    /*background-image: linear-gradient(120deg, #4b2e83, #b7a57a);*/
+    background-image: linear-gradient(120deg, #155799, #159957);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: -10px;
+    /*text-shadow: 1px 1px 0 black;*/
 }
 
 .project-name {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 50px
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50px
 }
 
 .project-tagline {
-  margin-top: 40px;
-  margin-bottom: 10px;
-  font-weight: normal;
-  opacity: 0.9;
-  font-size: 28px
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    opacity: 0.9;
+    font-size: 28px
 }
 
 /* class: page title */
@@ -110,13 +113,13 @@ papername {
     font-family: Arial;
     font-size: 40px;
     text-align: center;
-    font-weight:800;
+    font-weight: 800;
 }
 
 /* class: section */
 .section {
     padding-top: 1em;
-    padding-bottom:0em;
+    padding-bottom: 0em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -130,44 +133,54 @@ papername {
 /* class: profile image */
 .profile-img {
     border-radius: 50%;
-    width:150px;
+    width: 150px;
 }
 
 /* class: Bibtex */
 .bibtax {
+    /* font-family: Arial; */
     padding-left: 1em;
+    padding-right: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: #f5f5f5;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
 }
 
 /* Table for examples */
 #example {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-#example td, #example th {
-  border: 1px solid #ddd;
-  padding: 8px;
+#example td,
+#example th {
+    border: 1px solid #ddd;
+    padding: 8px;
 }
 
-#example tr:nth-child(even){background-color: #f5f5f5;}
+#example tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
 
-#example tr:hover {background-color: #ddd;}
+#example tr:hover {
+    background-color: #ddd;
+}
 
 /*table tile*/
 #example th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-size: 16px;
-  text-align: center;
-  font-weight: 600;
-  background-color: #2774AE;
-  color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    background-color: #2774AE;
+    color: white;
 }
 
 /* class: images in the table */
@@ -210,12 +223,16 @@ papername {
     /**display: inline-block;*/
 }
 
-.example-text, .example-choice, .example-text-liter, .example-diag-liter {
+.example-text,
+.example-choice,
+.example-text-liter,
+.example-diag-liter {
     font-size: 14px;
 }
 
 /*Sizes*/
-.navbar, .page-header {
+.navbar,
+.page-header {
     max-width: 700em;
 }
 
@@ -237,4 +254,3 @@ papername {
 /*    overflow: auto; !* 内容超出宽度时隐藏超出部分的内容 *!*/
 /*    !*text-overflow: ellipsis; !* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*!*!*/
 /*}*/
-
